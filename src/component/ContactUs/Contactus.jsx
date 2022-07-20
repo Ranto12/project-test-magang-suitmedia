@@ -52,7 +52,7 @@ const Contactus = () => {
             <div className='  justify-content-center' >
                 <div className='d-flex flex-column  justify-content-center input-contact '>
                     <label className='d-flex'  htmlFor="Name">Name </label>
-                    <input  type="text" onChange={handleName}/>
+                    <input required  type="text" onChange={handleName}/>
                     { errorname === true ? (
                         <span>nama anda belum terisi</span>
                     ):(
@@ -62,7 +62,7 @@ const Contactus = () => {
                 </div>
                 <div className='d-flex flex-column  justify-content-center input-contact '>
                     <label className='d-flex'  htmlFor="Name">Email </label>
-                    <input  type="email" onChange={handleEmail} />
+                    <input  required type="email" onChange={handleEmail} />
                     { erroremail === true ? (
                         <span>email  anda belum sesuai format</span>
                     ):(
@@ -72,7 +72,7 @@ const Contactus = () => {
                 </div>
                 <div className='d-flex flex-column   justify-content-center input-contact '>
                     <label className='d-flex'  htmlFor="Name">messeage </label>
-                    <textarea  className='text-area' type="text" onChange={handleMessage} />
+                    <textarea required  className='text-area' type="text" onChange={handleMessage} />
                     { errormessage === true ? (
                         <span>pesan anda belum terisi</span>
                     ):(

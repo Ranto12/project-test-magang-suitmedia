@@ -1,0 +1,23 @@
+.card-ourvalue{
+    width: 300px;
+    height: 200px;
+    /* background-color: rgb(36, 232, 10); */
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+.incon{
+    max-width: 20px;
+}
+.marginbawah{
+    margin-top: 5%;
+}
+.font-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 15px;
+    font-weight: bold;
+}

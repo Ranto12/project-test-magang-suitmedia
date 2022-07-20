@@ -1,0 +1,7 @@
+.navbarhover{
+    cursor: pointer;
+}
+.hoveractive:hover{
+    color: #ffffff;
+    background-color: #00bcd4;
+}

@@ -1,17 +1,32 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
-  const [hover, setHover] = useState(false);
-  const handleHover = () =>{
-    setHover(!hover);
-  }
+  // const [hover, setHover] = useState(false);
+  // const handleHover = () =>{
+  //   setHover(!hover);
+  // }
   return (
     <nav class="navbar navbar-light bg-light ">
         <div class="container-fluid ms-5 me-5 navbarhover">
-            <span class="navbar-brand mb-0 h1 ms-5">Navbar</span>
+            <span class="navbar-brand mb-0 h1 ms-5">Company</span>
+            <div className='d-flex flex-row'>
+            <div class="dropdown ">
+              <button class="dropbtn">ABOUT</button>
+              <div class="dropdown-content">
+                <a href='#'>VISION</a>
+                <a href='#'>MISION</a>
+              </div>
+            </div>
+            <div>
+            <button className='dropbtn'>OUR WORK</button>
+              <button className='dropbtn'>OUR TEAM</button>
+              <button className='dropbtn'>CONTACT</button>
+            </div>
+            </div>
+
             
-            <div class="btn-group">
+            {/* <div class="btn-group">
   <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
     Action
   </button>
@@ -21,8 +36,8 @@ const Navbar = () => {
     <li><a class="dropdown-item" href="#">Something else here</a></li>
     <li><hr class="dropdown-divider"/></li>
     <li><a class="dropdown-item" href="#">Separated link</a></li>
-  </ul>
-</div>
+  </ul> */}
+{/* </div> */}
             {/* <div className=''>
                 <div className=''>
                 <span class="navbar-brand mb-0 h1 hoveractive  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" onMouseEnter={handleHover}>ABOUT</span>

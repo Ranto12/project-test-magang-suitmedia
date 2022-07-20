@@ -7,7 +7,7 @@ import styles from "./Slider.module.css";
 
 export default function Slider() {
 
-    console.log(slideImages[0] === slideImages[0]);
+    // console.log(slideImages[0] === slideImages[0]);
   return (
     <div className={styles.container}>
       <Slide easing="ease">
